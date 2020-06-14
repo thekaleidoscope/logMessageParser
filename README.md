@@ -19,3 +19,11 @@ like shown below.
 | I 6 Completed processing | Information 6 "Completed processing"|
 | W 6 Completed processing | Warning 6 "Completed processing"|
 | E 2 6 Completed processing | (Error 2) 6 "Completed processing"|
+
+
+##### Local Project Setup:
+
+* clone repo
+* in project source dir create virtual env
+* install dependency packages (from requirements.txt)
+* run tests to ensure project setup is successful
