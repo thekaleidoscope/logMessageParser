@@ -6,9 +6,16 @@ from main.Unknown import Unknown
 
 
 class ErrorLogMessageTest(unittest.TestCase):
-    def test_shouldTakeInputErrorLog(self):
+    def test_shouldParseInputErrorLog(self):
         input_log_message = "E 2 6 Completed armadillo processing"
         expected_log_message = ErrorLogMessage(MessageType.ERROR, 2, 6, "Completed armadillo processing")
+
+        log_message_parsed = ErrorLogMessage.parse(input_log_message)
+        self.assertEqual(expected_log_message, log_message_parsed)
+
+    def test_shouldParseInputErrorLogWithMultipleNumericalValues(self):
+        input_log_message = "E 2 6 100 Completed armadillo processing"
+        expected_log_message = ErrorLogMessage(MessageType.ERROR, 2, 6, "100 Completed armadillo processing")
 
         log_message_parsed = ErrorLogMessage.parse(input_log_message)
         self.assertEqual(expected_log_message, log_message_parsed)
