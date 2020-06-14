@@ -1,5 +1,5 @@
-from main.LogMessage.LogMessage import LogMessage
-from main.Unknown import Unknown
+from main.domain.LogMessage.LogMessage import LogMessage
+from main.domain.Unknown import Unknown
 
 
 def parse(input_log) -> LogMessage or Unknown:

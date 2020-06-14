@@ -1,11 +1,11 @@
 import unittest
 
 from main import LogMessageParser
-from main.LogMessage.ErrorLogMessage import ErrorLogMessage
-from main.LogMessage.InformationLogMessage import InformationLogMessage
-from main.LogMessage.WarningLogMessage import WarningLogMessage
-from main.MessageType import MessageType
-from main.Unknown import Unknown
+from main.domain.LogMessage.ErrorLogMessage import ErrorLogMessage
+from main.domain.LogMessage.InformationLogMessage import InformationLogMessage
+from main.domain.LogMessage.WarningLogMessage import WarningLogMessage
+from main.domain.MessageType import MessageType
+from main.domain.Unknown import Unknown
 
 
 class LogMessageParsingTest(unittest.TestCase):

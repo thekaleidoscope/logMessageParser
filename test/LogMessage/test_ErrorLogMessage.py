@@ -1,8 +1,8 @@
 import unittest
 
-from main.LogMessage.ErrorLogMessage import ErrorLogMessage
-from main.MessageType import MessageType
-from main.Unknown import Unknown
+from main.domain.LogMessage.ErrorLogMessage import ErrorLogMessage
+from main.domain.MessageType import MessageType
+from main.domain.Unknown import Unknown
 
 
 class ErrorLogMessageTest(unittest.TestCase):

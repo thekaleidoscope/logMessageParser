@@ -1,8 +1,8 @@
 import re
 
-from main.LogMessage.LogMessage import LogMessage
-from main.MessageType import MessageType
-from main.Unknown import Unknown
+from main.domain.LogMessage.LogMessage import LogMessage
+from main.domain.MessageType import MessageType
+from main.domain.Unknown import Unknown
 
 
 class ErrorLogMessage(LogMessage):

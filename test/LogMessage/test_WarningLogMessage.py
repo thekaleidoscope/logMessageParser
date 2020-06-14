@@ -1,8 +1,8 @@
 import unittest
 
-from main.LogMessage.WarningLogMessage import WarningLogMessage
-from main.MessageType import MessageType
-from main.Unknown import Unknown
+from main.domain.LogMessage.WarningLogMessage import WarningLogMessage
+from main.domain.MessageType import MessageType
+from main.domain.Unknown import Unknown
 
 
 class WarningLogMessageTest(unittest.TestCase):
