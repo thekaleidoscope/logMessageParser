@@ -1,10 +1,11 @@
 import re
 
+from main.LogMessage.LogMessage import LogMessage
 from main.MessageType import MessageType
 from main.Unknown import Unknown
 
 
-class LogMessage:
+class InformationLogMessage(LogMessage):
     def __init__(self, messageType, timestamp, message) -> None:
         self.messageType = messageType
         self.timestamp = timestamp
@@ -21,6 +22,6 @@ class LogMessage:
         expected_pattern = 'I\s(\d*)\s(.*)'
         match = re.search(expected_pattern, input_log_message)
         if match:
-            return LogMessage(MessageType.INFO, int(match.group(1)), match.group(2))
+            return InformationLogMessage(MessageType.INFO, int(match.group(1)), match.group(2))
         else:
             return Unknown(input_log_message)
